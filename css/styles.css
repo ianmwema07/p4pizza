@@ -1,4 +1,27 @@
 /* Styling for desktop screens*/
+/* Add a black background color to the top navigation */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+#webHeader{
+  font-family: 'Dancing Script', cursive;
+  margin-left: 2em;
+}
+
+#nav-list li a{
+  color: #000000;
+}
+
+.navbar{
+  margin-top: 20px;
+  border:1px solid #000000;
+  border-radius: 15px;
+  background: transparent;
+  color: #000000;
+}
+
+.navbar #navbarText{
+  float:right;
+}
 
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {
