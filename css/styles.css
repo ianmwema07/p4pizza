@@ -24,8 +24,8 @@ body{
 
 
 .navbar{
-    position: fixed;
-    width: 100%;
+  position: fixed;
+  width: 100%;
   border:1px solid #ffffff;
   background-color:rgb(165, 42, 42,0.5);
   opacity: 1;
@@ -136,7 +136,7 @@ body{
     }
 
     .section-3 h1{
-      margin-top: 2em;
+      padding-top: 3em;
     }
 
     .section-3 table{
@@ -151,15 +151,29 @@ body{
   /*End of section 3*/
   .section-4{
     background-color: white ;  
+    background-image: url(../img/section1-background.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: fixed;
     background-attachment: fixed;
     text-align: center;
     align-content: center;
-    color: #000000;
+    color: #ffffff;
     }
 
+    .section-4 h1{
+      padding-top: 1em ;
+    }
+
+    .section-4 .view-more{
+      background: transparent;
+      width: 10em;
+      color:#ffffff;
+      font-size: 30px;
+      margin-top: 1em;
+      margin-bottom: 2em;
+      border: 1px solid #ffffff;
+    }
   /*Start of Section 4*/
   
   /*End of Section 4*/
