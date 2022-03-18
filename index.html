@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>P4Pizza</title>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"><script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -13,35 +14,43 @@
 </head>
 <body>
   <div class="container-fluid">
-    <div class="section-1">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <div class="col-lg-8">
-            <h1 id="webHeader">p4pizza</h1>
-          </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarText">
-            <ul id="nav-list" class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contacts</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <div class="section-1">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <div class="col-lg-7">
+                <h1 id="webHeader">p4pizza</h1>
+              </div>
+              <button id="toggler-btn" class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="mdi mdi-arrow-down-bold-box-outline"></span>
+                <span class=".navbar-toggler navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul id="nav-list" class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contacts</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        
+          <h1 class="content-header"> <strong>Welcome</strong> </h1> <br>
+          <p> <small>to</small>  </p> <br> <p> <span class="logo"> p4pizza.</span> </p>  <br> <p>We offer the best pizza in town </p>
+          <button class="view-more">View menu<span class="mdi mdi-arrow-down-box"></span></button>
+      </div>
+  </div>
+    <div class="section-2">
+      <h1>Hello</h1>
     </div>
-    <div class="section-2"></div>
     <div class="section-3"></div>
     <div class="section-4"></div>
     <div class="section-5"></div>

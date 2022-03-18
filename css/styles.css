@@ -5,32 +5,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 /*End of importing fonts*/
-
+body{
+  font-family: 'Montserrat', sans-serif;
+}
 
 #webHeader{
   font-family: 'Dancing Script', cursive;
-  margin-left: 2em;
+  float: left;
+  margin-left: 1em;
 }
 
 #nav-list li a{
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   font-size: medium;
 }
 
+
 .navbar{
-  margin-top: 20px;
-  border:1px solid #000000;
-  border-radius: 15px;
-  background: transparent;
-  color: #000000;
+    position: fixed;
+    width: 100%;
+  border:1px solid #ffffff;
+  background-color:rgb(165, 42, 42,0.5);
+  opacity: 1;
+  color: #ffffff;
 }
+
+#toggler-btn{
+  border: #ffffff solid 1px;
+}
+
+
 
 .navbar #navbarText{
   float:right;
 }
 
+.section-1{
+  background-image: url(../img/section1-background.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-attachment: fixed;
+  text-align: center;
+  align-content: center;
+  color: #ffffff;
+}
+.section-1 .content-header{
+  padding-top: 4em;
+}
+.section-1 p{
+  font-size: 30px;
+  align-items: center;
+  text-align: center;
+}
+
+.section-1 .pizza-content{
+  background-color:rgb(165, 42, 42,0.5);
+  width: fit-content;
+}
+
+.section-1 .view-more{
+  background: transparent;
+  width: 10em;
+  color:#ffffff;
+  font-size: 30px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border: 1px solid #ffffff;
+}
+
+.section-1 .logo{
+  font-family: 'Dancing Script', cursive;
+  font-size: 50px;
+}
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {
   
