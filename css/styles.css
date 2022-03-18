@@ -55,7 +55,7 @@ body{
   color: #ffffff;
 }
 .section-1 .content-header{
-  padding-top: 3em;
+  padding-top: 2em;
 }
 .section-1 p{
   font-size: 30px;
@@ -73,7 +73,7 @@ body{
   width: 10em;
   color:#ffffff;
   font-size: 30px;
-  margin-top: 2em;
+  margin-top: 1em;
   margin-bottom: 2em;
   border: 1px solid #ffffff;
 }
@@ -96,11 +96,11 @@ body{
   color: #000000;
   }
   .section-2 h1{
-    padding-top: 1em;
+    padding-top: 2em;
   }
 
   .section-2 .card{
-    margin: 40px;
+    margin-left: 40px;
     border: 1px solid;
     border-color:rgb(165, 42, 42,0.5);
     
@@ -120,6 +120,25 @@ body{
     font-family: 'Dancing Script', cursive;
     font-size: 40px;
   }
+
+  /*End of section 2*/
+
+  /*Beginning of section 3*/
+  .section-3{
+    background-color: white ;  
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-attachment: fixed;
+    text-align: center;
+    align-content: center;
+    color: #000000;
+    }
+
+    .section-3 h1{
+      margin-top: 2em;
+    }
+  /*End of section 3*/
 
   /* Pepperoni.
 Mushroom.
