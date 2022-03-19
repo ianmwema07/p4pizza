@@ -17,7 +17,7 @@
 * MDI ICONS
 ## Support and contact details
 * IAN KARIUKI ian.kariuki@student.moringa.com
-* [Click here to visit the live site](https://ianmwema07.github.io/p4pizza/)
+* [Click here to visit the live site](https://ianmwema07.github.io/p/)
 ### License
 **The MIT License (MIT)**
 Copyright (c) 2022 **Ian Kariuki**
