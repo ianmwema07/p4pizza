@@ -67,6 +67,8 @@ $(document).ready(function(){
     var newOrder = new Order(selectedCrust,selectedToppings,selectedSize,selectedAmount);
     // var newDelivery = new Delivery(selectedDelivery,deliveryLocation);
 
+
+    //Business logic and calculations
     if( newOrder.size == "Small"){
       if ( newOrder.crust == "Neapolitan Pizza"){
         if (newOrder.toppings == "Onions"){
@@ -146,18 +148,6 @@ $(document).ready(function(){
         }
       }
     }
-
-    // if( selectedSize == "Small" && selectedCrust == "Neapolitan Pizza" && selectedToppings == "Onions"){
-    //   var totalPrice = pricesArray[0] + pricesArray[3] +pricesArray[6];
-    // } else{
-    //   var totalPrice = "Hello";
-      
-    // }
-    
-    
      $("ol#order").append("<li><span class='summary'>"+newOrder.crust+"  "+newOrder.toppings+" "+newOrder.size+" "+totalPrice+ "</span></li>");
-    //  $("ol#order").append("<li><span class='summary'>"+newOrder.crust+"  "+newOrder.toppings+" "+newOrder.size+" "+totalPrice2+ "</span></li>");
-    //  $("ol#order").append("<li><span class='summary'>"+newOrder.crust+"  "+newOrder.toppings+" "+newOrder.size+" "+totalPrice3+ "</span></li>");
-   
   });
 });
