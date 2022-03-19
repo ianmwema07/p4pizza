@@ -117,6 +117,17 @@ body{
     border: 1px solid #ffffff;
   }
 
+  .section-2 .modal-title{
+    font-family: 'Dancing Script', cursive;
+    font-weight: 800;
+    font-size: 40px;
+  }
+
+  .section-2 #modalClosing{
+    background-color:rgb(165, 42, 42,1);
+    color: #ffffff;
+    font-family: 'Dancing Script', cursive;
+  }
  
 
   /*End of section 2*/

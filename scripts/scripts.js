@@ -14,7 +14,7 @@ function Delivery(option,location){
   this.location = location;
 }
 
-Delivery.prototype.deliverySummary = function() {
+Delivery  .prototype.deliverySummary = function() {
   return this.crust + "<br> " + this.size + "<br>" + this.crust  + "<br>" + this.toppings + "<br>" + this.amount;
 }
 
