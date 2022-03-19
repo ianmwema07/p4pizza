@@ -99,27 +99,25 @@ body{
     padding-top: 2em;
   }
 
-  .section-2 .card{
-    margin-left: 40px;
-    border: 1px solid;
-    border-color:rgb(165, 42, 42,0.5);
-    
-  }
-  .section-2 .card img{
-    margin-top: 10px;
+  .section-2 form{
+    background-color:rgb(165, 42, 42,0.5);
   }
 
-  .section-2 .card-button{
-    border: 1px solid;
-    border-color: rgb(165, 42, 42,0.5);
-    color: rgb(165, 42, 42,0.5);
+  .section-2 form label{
+    color: #ffffff;
   }
 
-
-  .section-2 .card-title{
-    font-family: 'Dancing Script', cursive;
-    font-size: 40px;
+  .section-2 button{
+    background: transparent;
+    width: 10em;
+    color:#ffffff;
+    font-size: 30px;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    border: 1px solid #ffffff;
   }
+
+ 
 
   /*End of section 2*/
 

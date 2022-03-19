@@ -50,59 +50,58 @@
   </div>
     <div id="section-2" class="section-2 row">
         <h1>Menu</h1>
-      <div class="card" style="width: 18rem;">
-        <img src="/img/menuItems/menu-item-1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Pepperoni.</h5>
-          <p class="card-text">Enjoy your lunch with some Pepperoni toppings  </p>
-          <button class="btn card-button">Order Now</button>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="/img/menuItems/menu-item-2.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Black Olives.</h5>
-          <p class="card-text">Enjoy your lunch with some Pepperoni toppings  </p>
-          <button class="btn card-button">Order Now</button>
-        </div>
-      </div>  
-      <div class="card" style="width: 18rem;">
-        <img style="height: 174px;" src="/img/menuItems/menu-item-3.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Fresh Garlic.</h5>
-          <p class="card-text">Enjoy your lunch with some Pepperoni toppings  </p>
-          <button class="btn card-button">Order Now</button>
-        </div>
-      </div>     
+        <div class="d-flex justify-content-center">
+          <form action="" class="row col-lg-8" id="orderSummary">
+            <div class="form-group col-6 col-sm-6 mb-3 mt-3">
+              <label for="email" class="form-label">Pizza Crust</label>
+              <select class="form-select" id="pizzaCrust">
+                <option value="Neapolitan Pizza">Neapolitan Pizza.</option>
+                <option value="New York Style Pizza">New York Style Pizza.</option>
+                <option value="St. Louis Pizza">St. Louis Pizza.</option>
+              </select>
+            </div>
+            <div class="form-group col-6 col-sm-6 mb-3 mt-3">
+              <label for="email" class="form-label">Toppings</label>
+              <select class="form-select" id="toppings">
+                <option value="Onions"> Onions.</option>
+                <option value="Sausage"> Sausage.</option>
+                <option value="Bacon"> Bacon.</option>
+              </select>
+            </div>
+            <div class="form-group col-6 col-sm-6 mb-3 mt-3">
+              <label for="size" class="form-label">Size</label>
+              <select class="form-select" id="pizzaSize">
+                <option value="Small"> Small</option>
+                <option value="Medium"> Medium</option>
+                <option value="Large"> Large</option>
+              </select>
+            </div>
+            <div class="form-group col-6 col-sm-6 mb-3 mt-3">
+              <label for="numberOfPizza" class="form-label">Number of Pizza:</label>
+              <input type="number" class="form-control" id="pizzaAmount" placeholder="How many would you like?">
+            </div>
+            <div class="form-group col-6 col-sm-6 mb-3 mt-3">
+              <label for="email" class="form-label">Delivery</label>
+              <select class="form-select" id="delivery">
+                <option value="Pick up from Shop"> Pick up from Shop</option>
+                <option value="Delivery to Home"> Delivery to Home</option>
+              </select>
+            </div>
+            <div class="form-group col-6 col-sm-6 mb-3 mt-3">
+              <label for="numberOfPizza" class="form-label">Delivery Location   :</label>
+              <input type="text" class="form-control" id="deliveryLocation" placeholder="How many would you like?">
+            </div>
+            <div class="d-flex justify-content-center">
+               <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>   
     </div>
     <div id="section-3" class="section-3">
       <h1>Checkout</h1>
-      <table class="col-12 ">
-        <thead>
-          <td class="col-lg-3 col-md-6"></td>
-          <td class="col-lg-9 col-md-6"></td>
-        </thead>
-        <tr>
-          <td> <strong>Pizza Name</strong></td>
-          <td>Pepperoni</td>
-        </tr>
-        <tr>
-          <td> <strong>Amount</strong> </td>
-          <td>14</td>
-        </tr>
-        <tr>
-          <td> <strong>Price/pizza</strong> </td>
-          <td>14</td>
-        </tr>
-        <tr>
-          <td> <strong>Total Amount Payable</strong> </td>
-          <td>14</td>
-        </tr>
-        <tr>
-          <td> <strong>Total Amount Payable</strong> </td>
-          <td>14</td>
-        </tr>
-      </table>
+      <ol id="order">
+    
+      </ol>
     </div>
     <div class="container">
       <div id="section-4"class="section-4 row">
@@ -117,7 +116,7 @@
               <label for="exampleInputPassword1">Message</label>
              <textarea class="form-control" name="" id="" cols="30" rows="5"></textarea>
             </div>
-            <button class="view-more">Submit</button>
+            <button class="view-more" onclick="display()">Submit</button>
           </form>
         </div>
       </div>
