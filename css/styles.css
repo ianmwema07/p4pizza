@@ -50,6 +50,7 @@ body{
   background-repeat: no-repeat;
   background-position: fixed;
   background-attachment: fixed;
+  height: 650px;
   text-align: center;
   align-content: center;
   color: #ffffff;
@@ -61,6 +62,10 @@ body{
   font-size: 30px;
   align-items: center;
   text-align: center;
+}
+
+.section-1 .row .card{
+  width:15rem;
 }
 
 .section-1 .pizza-content{
@@ -184,6 +189,40 @@ body{
       border: 1px solid #ffffff;
     }
   /*Start of Section 4*/
+  .section-2 h1{
+    padding-top: 2px;
+  }
+
+  .section-2 form{
+    background-color:rgb(165, 42, 42,0.5);
+  }
+
+  .section-2 form label{
+    color: #ffffff;
+  }
+
+  .section-2 button{
+    background: transparent;
+    width: 10em;
+    color:#ffffff;
+    font-size: 30px;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    border: 1px solid #ffffff;
+  }
+
+  .section-2 .modal-title{
+    font-family: 'Dancing Script', cursive;
+    font-weight: 800;
+    font-size: 40px;
+  }
+
+  .section-2 #modalClosing{
+    background-color:rgb(165, 42, 42,1);
+    color: #ffffff;
+    font-family: 'Dancing Script', cursive;
+  }
+ 
   
   /*End of Section 4*/
 
@@ -202,10 +241,99 @@ Fresh garlic. */
 
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {
+  .section-1{
+    height: 300px;
+  }
+  .section-1 .content-header{
+    padding-top: 2em;
+  }
+  .section-1 p{
+    font-size: 15px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .section-1 .pizza-content{
+    background-color:rgb(165, 42, 42,0.5);
+    width: fit-content;
+  }
+  
+  .section-1 .view-more{
+    background: transparent;
+    width: 10em;
+    color:#ffffff;
+    font-size: 15px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border: 1px solid #ffffff;
+  }
+  
+  .section-1 .logo{
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+  }
+
+  .section-4{
+    background-color: white ;  
+    background-image: url(../img/section1-background.jpg);
+    background-size: auto 90%;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-attachment: fixed;
+    text-align: center;
+    align-content: center;
+    color: #ffffff;
+    }
   
 }
 
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 481px) and (max-width: 767px) {
+  .section-1{
+    height: 300px;
+  }
+  .section-1 .content-header{
+    padding-top: 2em;
+  }
+  .section-1 p{
+    font-size: 15px;
+    align-items: center;
+    text-align: center;
+  }
   
+  .section-1 .pizza-content{
+    background-color:rgb(165, 42, 42,0.5);
+    width: fit-content;
+  }
+  
+  .section-1 .view-more{
+    background: transparent;
+    width: 10em;
+    color:#ffffff;
+    font-size: 15px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border: 1px solid #ffffff;
+  }
+  
+  .section-1 .logo{
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+  }
+
+  .section-4{
+    background-color: white ;  
+    background-image: url(../img/section1-background.jpg);
+    background-size: auto 95%;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-attachment: fixed;
+    text-align: center;
+    align-content: center;
+    color: #ffffff;
+    }
+
+  /* section-2 */
+
+  /*End of Section 2*/
 }

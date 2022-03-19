@@ -21,7 +21,7 @@
                 <h1 id="webHeader">p4pizza</h1>
               </div>
               <button id="toggler-btn" class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="mdi mdi-arrow-down-bold-box-outline"></span>
+                <span class="mdi mdi-menu"></span>
                 <span class=".navbar-toggler navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarText">
@@ -45,7 +45,7 @@
         
           <h1 class="content-header"> <strong>Welcome</strong> </h1> <br>
           <p> <small>to</small>  <br> <span class="logo"> p4pizza.</span>  <br> We offer the best pizza in <br> town </p>
-         <a href="#section-2"><button href="#section-2" class="view-more" data-bs-toggle="modal" data-bs-target="#exampleModal">View menu<span class="mdi mdi-arrow-down-box"></span></button></a> 
+         <a href="#section-2"><button href="#section-2" class="view-more" data-bs-toggle="modal" data-bs-target="#exampleModal">View menu<span class="mdi mdi-menu"></span></button></a> 
       </div>
   </div>
     <div id="section-2" class="section-2 row">
@@ -61,8 +61,8 @@
                 </div>
                 <div class="modal-body">
                   <div class="row">
-                    <div class="col-lg-4">
-                      <div class="card" style="width: 15rem;">
+                    <div class="col-lg-4 col-md-12">
+                      <div class="card col-md-12" >
                         <img src="../img/menuItems/menu-item-1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Small</h5>
@@ -71,7 +71,7 @@
                       </div>
                     </div>
                     <div class="col-lg-4">
-                      <div class="card" style="width: 15rem;">
+                      <div class="card">
                         <img src="../img/menuItems/menu-item-2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h4 class="card-title">Medium</h4>
@@ -80,7 +80,7 @@
                       </div>
                     </div>
                     <div class="col-lg-4">
-                      <div class="card" style="width: 15rem; ">
+                      <div class="card" >
                         <img style="height:10rem" src="../img/menuItems/menu-item-3.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h3 class="card-title">Large</h3>
@@ -88,7 +88,6 @@
                         </div>
                       </div>
                     </div>
-                    
                   </div>
                   <hr>
                   <div class="row">
@@ -119,7 +118,7 @@
           </div></div>
         <div class="d-flex justify-content-center">
           <form action="" class="row col-lg-8" id="orderSummary">
-            <div class="form-group col-6 col-sm-6 mb-3 mt-3">
+            <div class="form-group col-lg-6 col-md-12 col-sm-12 mb-3 mt-3">
               <label for="email" class="form-label">Pizza Crust</label>
               <select class="form-select" id="pizzaCrust">
                 <option value="Neapolitan Pizza">Neapolitan Pizza.</option>
@@ -127,7 +126,7 @@
                 <option value="St. Louis Pizza">St. Louis Pizza.</option>
               </select>
             </div>
-            <div class="form-group col-6 col-sm-6 mb-3 mt-3">
+            <div class="form-group col-lg-6 col-md-12 col-sm-12 mb-3 mt-3">
               <label for="email" class="form-label">Toppings</label>
               <select class="form-select" id="toppings">
                 <option value="Onions"> Onions.</option>
@@ -135,7 +134,7 @@
                 <option value="Bacon"> Bacon.</option>
               </select>
             </div>
-            <div class="form-group col-6 col-sm-6 mb-3 mt-3">
+            <div class="form-group col-lg-6 col-md-12 col-sm-12 mb-3 mt-3">
               <label for="size" class="form-label">Size</label>
               <select class="form-select" id="pizzaSize">
                 <option value="Small"> Small</option>
@@ -143,18 +142,18 @@
                 <option value="Large"> Large</option>
               </select>
             </div>
-            <div class="form-group col-6 col-sm-6 mb-3 mt-3">
+            <div class="form-group col-lg-6 col-md-12 col-sm-12 mb-3 mt-3">
               <label for="numberOfPizza" class="form-label">Number of Pizza:</label>
               <input type="number" class="form-control" id="pizzaAmount" placeholder="How many would you like?">
             </div>
-            <div class="form-group col-6 col-sm-6 mb-3 mt-3">
+            <div class="form-group col-lg-6 col-md-12 col-sm-12 mb-3 mt-3">
               <label for="email" class="form-label">Delivery</label>
               <select class="form-select" id="delivery">
                 <option value="Pick up from Shop"> Pick up from Shop</option>
                 <option value="Delivery to Home"> Delivery to Home</option>
               </select>
             </div>
-            <div class="form-group col-6 col-sm-6 mb-3 mt-3">
+            <div class="form-group col-lg-6 col-md-12 col-sm-12 mb-3 mt-3">
               <label for="numberOfPizza" class="form-label">Delivery Location   :</label>
               <input type="text" class="form-control" id="deliveryLocation" placeholder="How many would you like?">
             </div>
