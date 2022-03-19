@@ -21,7 +21,7 @@
                 <h1 id="webHeader">p4pizza</h1>
               </div>
               <button id="toggler-btn" class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="mdi mdi-arrow-down-bold-box-outline"></span>
+                <span class="mdi mdi-menu"></span>
                 <span class=".navbar-toggler navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarText">
@@ -30,7 +30,7 @@
                     <a class="nav-link " aria-current="page" href="#section-1">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#section-2">Menu</a>
+                    <a class="nav-link" href="#section-2">Order Now</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#section-3">Checkout</a>
@@ -45,64 +45,129 @@
         
           <h1 class="content-header"> <strong>Welcome</strong> </h1> <br>
           <p> <small>to</small>  <br> <span class="logo"> p4pizza.</span>  <br> We offer the best pizza in <br> town </p>
-         <a href="#section-2"><button href="#section-2" class="view-more">View menu<span class="mdi mdi-arrow-down-box"></span></button></a> 
+         <a href="#section-2"><button href="#section-2" class="view-more" data-bs-toggle="modal" data-bs-target="#exampleModal">View menu<span class="mdi mdi-menu"></span></button></a> 
       </div>
   </div>
     <div id="section-2" class="section-2 row">
-        <h1>Menu</h1>
-      <div class="card" style="width: 18rem;">
-        <img src="/img/menuItems/menu-item-1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Pepperoni.</h5>
-          <p class="card-text">Enjoy your lunch with some Pepperoni toppings  </p>
-          <button class="btn card-button">Order Now</button>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="/img/menuItems/menu-item-2.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Black Olives.</h5>
-          <p class="card-text">Enjoy your lunch with some Pepperoni toppings  </p>
-          <button class="btn card-button">Order Now</button>
-        </div>
-      </div>  
-      <div class="card" style="width: 18rem;">
-        <img style="height: 174px;" src="/img/menuItems/menu-item-3.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Fresh Garlic.</h5>
-          <p class="card-text">Enjoy your lunch with some Pepperoni toppings  </p>
-          <button class="btn card-button">Order Now</button>
-        </div>
-      </div>     
+        <h1>Make Order</h1>
+        
+        <div class="d-flex justify-content-center">
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel"> Our Menu</h5>
+                  <button id="modalClosing" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                      <div class="card col-md-12" >
+                        <img src="../img/menuItems/menu-item-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Small</h5>
+                          <p class="card-text"><small>KES</small><br><strong>300</strong></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="card">
+                        <img src="../img/menuItems/menu-item-2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h4 class="card-title">Medium</h4>
+                          <p class="card-text"><small>KES</small><br><strong>600</strong></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="card" >
+                        <img style="height:10rem" src="../img/menuItems/menu-item-3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h3 class="card-title">Large</h3>
+                          <p class="card-text"><small>KES</small><br><strong>900</strong></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="card col-lg-6 col-md-6 col-sm-12" >
+                      <div class="card-header">
+                       <strong>Crust</strong> 
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Neapolitan Pizza : <small>KES</small>&nbsp;&nbsp;<strong>120</strong></li>
+                        <li class="list-group-item">New YourkStyle Pizza : <small>KES</small>&nbsp;&nbsp;<strong>240</strong></li>
+                        <li class="list-group-item">st. Louise : <small>KES</small>&nbsp;&nbsp;<strong>360</strong></li>
+                      </ul>
+                    </div>
+                    <div class="card col-lg-6 col-md-6 col-sm-12" >
+                      <div class="card-header">
+                        <strong>Toppings</strong>
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Onions : <small>KES</small>&nbsp;&nbsp;<strong>100</strong></li>
+                        <li class="list-group-item">Sausage : <small>KES</small>&nbsp;&nbsp;<strong>200</strong></li>
+                        <li class="list-group-item"> Bacon : <small>KES</small>&nbsp;&nbsp;<strong>300</strong></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div></div>
+        <div class="d-flex justify-content-center">
+          <form action="" class="row col-lg-8" id="orderSummary">
+            <div class="form-group col-lg-6 col-md-12 col-sm-12 mb-3 mt-3">
+              <label for="email" class="form-label">Pizza Crust</label>
+              <select class="form-select" id="pizzaCrust">
+                <option value="Neapolitan Pizza">Neapolitan Pizza.</option>
+                <option value="New York Style Pizza">New York Style Pizza.</option>
+                <option value="St. Louis Pizza">St. Louis Pizza.</option>
+              </select>
+            </div>
+            <div class="form-group col-lg-6 col-md-12 col-sm-12 mb-3 mt-3">
+              <label for="email" class="form-label">Toppings</label>
+              <select class="form-select" id="toppings">
+                <option value="Onions"> Onions.</option>
+                <option value="Sausage"> Sausage.</option>
+                <option value="Bacon"> Bacon.</option>
+              </select>
+            </div>
+            <div class="form-group col-lg-6 col-md-12 col-sm-12 mb-3 mt-3">
+              <label for="size" class="form-label">Size</label>
+              <select class="form-select" id="pizzaSize">
+                <option value="Small"> Small</option>
+                <option value="Medium"> Medium</option>
+                <option value="Large"> Large</option>
+              </select>
+            </div>
+            <div class="form-group col-lg-6 col-md-12 col-sm-12 mb-3 mt-3">
+              <label for="numberOfPizza" class="form-label">Number of Pizza:</label>
+              <input type="number" class="form-control" id="pizzaAmount" placeholder="How many would you like?">
+            </div>
+            <div class="form-group col-lg-6 col-md-12 col-sm-12 mb-3 mt-3">
+              <label for="email" class="form-label">Delivery</label>
+              <select class="form-select" id="delivery">
+                <option value="Pick up from Shop"> Pick up from Shop</option>
+                <option value="Delivery to Home"> Delivery to Home</option>
+              </select>
+            </div>
+            <div class="form-group col-lg-6 col-md-12 col-sm-12 mb-3 mt-3">
+              <label for="numberOfPizza" class="form-label">Delivery Location   :</label>
+              <input type="text" class="form-control" id="deliveryLocation" placeholder="How many would you like?">
+            </div>
+            <div class="d-flex justify-content-center">
+               <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>   
     </div>
     <div id="section-3" class="section-3">
       <h1>Checkout</h1>
-      <table class="col-12 ">
-        <thead>
-          <td class="col-lg-3 col-md-6"></td>
-          <td class="col-lg-9 col-md-6"></td>
-        </thead>
-        <tr>
-          <td> <strong>Pizza Name</strong></td>
-          <td>Pepperoni</td>
-        </tr>
-        <tr>
-          <td> <strong>Amount</strong> </td>
-          <td>14</td>
-        </tr>
-        <tr>
-          <td> <strong>Price/pizza</strong> </td>
-          <td>14</td>
-        </tr>
-        <tr>
-          <td> <strong>Total Amount Payable</strong> </td>
-          <td>14</td>
-        </tr>
-        <tr>
-          <td> <strong>Total Amount Payable</strong> </td>
-          <td>14</td>
-        </tr>
-      </table>
+      <ol id="order">
+    
+      </ol>
     </div>
     <div class="container">
       <div id="section-4"class="section-4 row">
@@ -117,7 +182,7 @@
               <label for="exampleInputPassword1">Message</label>
              <textarea class="form-control" name="" id="" cols="30" rows="5"></textarea>
             </div>
-            <button class="view-more">Submit</button>
+            <button class="view-more" onclick="display()">Submit</button>
           </form>
         </div>
       </div>
