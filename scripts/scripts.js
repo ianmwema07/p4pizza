@@ -162,6 +162,8 @@ $(document).ready(function(){
      function deliveryAlert(){
        if(newDelivery.option == "Pick up from Shop"){
          alert("We look forward to seeing you at our shop.");
+       }else if(newDelivery.option == "Delivery to Home" && newDelivery.location != ""){
+         alert("Your pizza will be delivered at "+newDelivery.location);
        }
      }
   });
