@@ -156,15 +156,9 @@ $(document).ready(function(){
       "<tr><th scope=\"row\">" + "Toppings" + "</th>"+"<td>"+ newOrder.toppings +"</td>"+"</tr>"+
       "<tr><th scope=\"row\">" + "Size" + "</th>"+"<td>"+ newOrder.size +"</td>"+"</tr>"+
       "<tr><th scope=\"row\">" + "Number of Pizza" + "</th>"+"<td>"+ newOrder.amount +"</td>"+"</tr>"+
-      "<tr><th scope=\"row\">" + "Total Amount" + "</th>"+"<td>"+ pizzaAmount*totalPrice+"</td>"+"</tr>"
+      "<tr><th scope=\"row\">" + "Total Amount" + "</th>"+"<td>"+ pizzaAmount*totalPrice+"</td>"+"</tr>"+
+      "<tr><th scope=\"row\">" + "Delivery Option" + "</th>"+"<td>"+ newDelivery.option +"</td>"+"</tr>"+
+      "<tr><th scope=\"row\">" + "Delivery Location" + "</th>"+"<td>"+ newDelivery.location+"</td>"+"</tr>"
      );
-
-     function deliveryAlert(){
-       if(newDelivery.option == "Pick up from Shop"){
-         alert("We look forward to seeing you at our shop.");
-       }else if(newDelivery.option == "Delivery to Home" && newDelivery.location != ""){
-         alert("Your pizza will be delivered at "+newDelivery.location);
-       }
-     }
   });
 });
