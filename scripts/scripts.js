@@ -65,7 +65,7 @@ $(document).ready(function(){
    
 
     var newOrder = new Order(selectedCrust,selectedToppings,selectedSize,selectedAmount);
-    // var newDelivery = new Delivery(selectedDelivery,deliveryLocation);
+    var newDelivery = new Delivery(selectedDelivery,deliveryLocation);
 
 
     //Business logic and calculations
@@ -144,10 +144,21 @@ $(document).ready(function(){
         }else if(newOrder == "Sausage"){
            var totalPrice = pricesArray[2] + pricesArray[5] + pricesArray[7];
         }else if(newOrder == "Bacon"){ 
-          alert("Hello");
+            var totalPrice = pricesArray[2] + pricesArray[5] + pricesArray[8];
         }
       }
     }
-     $("ol#order").append("<li><span class='summary'>"+newOrder.crust+"  "+newOrder.toppings+" "+newOrder.size+" "+totalPrice+ "</span></li>");
+
+    var pizzaAmount = parseInt(newOrder.amount);
+     $("tbody#tbody").append(
+      "<tr><th scope=\"row\">" + "Your Order" + "</th>"+"<td>"+ " " +"</td>"+"</tr>"+ 
+      "<tr><th scope=\"row\">" + "Crust" + "</th>"+"<td>"+ newOrder.crust +"</td>"+"</tr>"+
+      "<tr><th scope=\"row\">" + "Toppings" + "</th>"+"<td>"+ newOrder.toppings +"</td>"+"</tr>"+
+      "<tr><th scope=\"row\">" + "Size" + "</th>"+"<td>"+ newOrder.size +"</td>"+"</tr>"+
+      "<tr><th scope=\"row\">" + "Number of Pizza" + "</th>"+"<td>"+ newOrder.amount +"</td>"+"</tr>"+
+      "<tr><th scope=\"row\">" + "Total Amount" + "</th>"+"<td>"+ pizzaAmount*totalPrice+"</td>"+"</tr>"+
+      "<tr><th scope=\"row\">" + "Delivery Option" + "</th>"+"<td>"+ newDelivery.option +"</td>"+"</tr>"+
+      "<tr><th scope=\"row\">" + "Delivery Location" + "</th>"+"<td>"+ newDelivery.location+"</td>"+"</tr>"
+     );
   });
 });
