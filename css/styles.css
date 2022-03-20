@@ -153,6 +153,17 @@ body{
       padding-top: 3em;
     }
 
+    .section-3 .view-more{
+      background: transparent;
+      width: 10em;
+      color:rgb(165, 42, 42,1);;
+      font-size: 30px;
+      margin-top: 1em;
+      margin-bottom: 2em;
+      border: 1px solid rgb(165, 42, 42,1);;
+    }
+    
+
     .section-3 table{
       margin-top: 1em;
       margin-bottom:1em;
